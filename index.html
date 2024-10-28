@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>document</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.jpg" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/foto.jpg" alt="foto">
+      </div>
+      <div class="information">
+        <h1>
+          BRAYAN EDUARDO GALBAN GUZMÁN 
+        </h1>
+        <span>
+          @guzman
+        </span>
+        <p> capacidad de análisis|comunicador efectivo|autocrítico
+        </p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+         Comencé mi carrera en este emocionante mundo hace varios años, cuando decidí que quería ayudar a las personas a encontrar la gorra perfecta que complementara su estilo único. Me gusta pensar que cada gorra cuenta una historia y tiene el poder de transformar un look, ya sea casual o más elegante. 
+
+Trabajo con diferentes marcas y estilos, desde gorras de béisbol clásicas hasta modelos más modernos y elegantes. Siempre estoy al tanto de las últimas tendencias para asegurarme de ofrecer lo mejor a mis clientes. Me encanta interactuar con ellos, entender sus gustos y ayudarles a encontrar esa pieza especial que les haga sentir bien.
+
+Además, me esfuerzo por brindar un excelente servicio al cliente. Creo que la confianza y la relación personal son fundamentales en cualquier venta. Siempre estoy dispuesto a escuchar y ofrecer consejos sobre cómo combinar las gorras con diferentes outfits. 
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://es.wikipedia.org/wiki/Gorra#:~:text=La%20gorra%20se%20caracteriza%20por,botones%2C%20lazos%20u%20otras%20adiciones." class="social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://www.bon-clic-bon-genre.es/content-las-diferentes-formas-de-gorras-boinas_0.htm" class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a href="https://gorrastornado.wordpress.com/2023/03/19/datos-curiosos-de-las-gorras/" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+  <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+  </div>
+    </main>
+  <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+  </script>
+</div>
+</body>
+</html>
